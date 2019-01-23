@@ -4,18 +4,44 @@ import java.util.*;
 
 public class Deck {
 
-    public List<String> entireDeck = new Arrays.asList();
+    public ArrayList<String> entireDeck = new ArrayList<>();
 
-    private final List<String> CARD_NUMBERS = Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King");
+    private static final String CLUBS = "clubs";
+    private static final String SPADES = "spades";
+    private static final String HEARTS = "hearts";
+    private static final String DIAMONDS = "diamonds";
 
-    public Deck(String suit1, String suit2, String suit3, String suit4){
+        public ArrayList<String> CARD_NUMBERS = new ArrayList<>();
+
+        {
+        for(int i = 1; i <= 10; i++)
+            CARD_NUMBERS.add(Integer.toString(i));
+
+        CARD_NUMBERS.add("Jack");
+        CARD_NUMBERS.add("Queen");
+        CARD_NUMBERS.add("King");
+
+
+         }
+
+    public Deck(){
 
         for (String cardNumber : CARD_NUMBERS){
-            entireDeck.add(suit1 + " - " + cardNumber);
+            entireDeck.add(cardNumber + " - " + CLUBS);
         }
+
+        for (String cardNumber : CARD_NUMBERS){
+            entireDeck.add(cardNumber + " - " + SPADES);
+        }
+
+        for (String cardNumber : CARD_NUMBERS){
+            entireDeck.add(cardNumber + " - " + HEARTS);
+        }
+
+        for (String cardNumber : CARD_NUMBERS){
+            entireDeck.add(cardNumber + " - " + DIAMONDS);
+        }
+
     }
-
-
-
 
 }
