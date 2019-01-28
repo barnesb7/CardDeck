@@ -15,11 +15,11 @@ public class Deck {
 
         {
         for(int i = 1; i <= 10; i++)
-            CARD_NUMBERS.add(Integer.toString(i));
 
-        CARD_NUMBERS.add("Jack");
-        CARD_NUMBERS.add("Queen");
-        CARD_NUMBERS.add("King");
+            CARD_NUMBERS.add(Integer.toString(i));
+            CARD_NUMBERS.add("Jack");
+            CARD_NUMBERS.add("Queen");
+            CARD_NUMBERS.add("King");
 
 
          }
@@ -27,19 +27,19 @@ public class Deck {
     public Deck(){
 
         for (String cardNumber : CARD_NUMBERS){
-            entireDeck.add(cardNumber + " - " + CLUBS);
+            entireDeck.add(cardNumber + " of " + CLUBS);
         }
 
         for (String cardNumber : CARD_NUMBERS){
-            entireDeck.add(cardNumber + " - " + SPADES);
+            entireDeck.add(cardNumber + " of " + SPADES);
         }
 
         for (String cardNumber : CARD_NUMBERS){
-            entireDeck.add(cardNumber + " - " + HEARTS);
+            entireDeck.add(cardNumber + " of " + HEARTS);
         }
 
         for (String cardNumber : CARD_NUMBERS){
-            entireDeck.add(cardNumber + " - " + DIAMONDS);
+            entireDeck.add(cardNumber + " of " + DIAMONDS);
         }
 
     }
