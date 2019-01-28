@@ -14,7 +14,7 @@ public class CardDemo {
         // deal cards to players
         for (Player player : game.players){
 
-            for (int i = 0; i <= 3; i++){
+            for (int i = 0; i <= 4; i++){
 
                 int randomIndex = random.nextInt(gameDeck.entireDeck.size());
 
